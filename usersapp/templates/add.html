@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<form method="POST" action="{% url 'add' %}">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Add Person</button>
+</form>
+<a href="{% url 'default' %}">View People</a>
+{% endblock %}

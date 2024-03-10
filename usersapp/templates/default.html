@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<ul>
+    {% for person in people %}
+    <li>{{ person }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add' %}">Add Person</a>
+{% endblock %}
