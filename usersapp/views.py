@@ -8,7 +8,6 @@ class Person:
     def __str__(self):
         return self.username
 
-# Global list to store instances of Person
 people = []
 
 def add(request):
